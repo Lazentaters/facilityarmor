@@ -540,6 +540,8 @@ p{
     }
 
     .brand-intro{
+        position: fixed;
+        justify-content: center;
         align-content: center;        
         width: auto;
         left: 50%;
