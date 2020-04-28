@@ -86,7 +86,7 @@ p{
 }
 
 /* ----------------------------------------------Header---------------------------------------- */
-.header{    
+.header{           
     /* Height: 10rem; 
     background-image: url(../images/FABackground.jpg);
     background-color: gray;
@@ -117,7 +117,7 @@ p{
     margin: auto;
 }
 
-.parallax {    
+.parallax-max {    
     /* The image used */
     background-image: url(../images/FABackground.jpg);
   
@@ -130,6 +130,8 @@ p{
     background-repeat: no-repeat;
     background-size: cover;  
     margin-top: 0;  
+
+    z-index: 0;
 }
 
 .parallax-sportpro {     
@@ -505,7 +507,9 @@ p{
 
 @media screen and (max-width: 1028px) {
 
-    .parallax {    
+    .parallax-max {    
+        height: 20rem;
+        z-index: -1;        
         /* The image used */
         background-image: url(../images/FABackground.jpg);
       
@@ -517,7 +521,7 @@ p{
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;  
-        margin-top: 0;  
+        margin-top: 0;
     }
 
     .parallax-sportpro {        
@@ -536,7 +540,8 @@ p{
     }
 
     .brand-intro{
-        position: fixed;
+        align-content: center;        
+        width: auto;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -60%) scale(.10);
