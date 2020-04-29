@@ -86,13 +86,14 @@ p{
 }
 
 /* ----------------------------------------------Header---------------------------------------- */
-.header{           
-    /* Height: 10rem; 
+.header{      
+    /* Height: auto; 
     background-image: url(../images/FABackground.jpg);
     background-color: gray;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    */
+    background-position: center;  */
+     
 }
 
 .header-logo{
@@ -131,7 +132,7 @@ p{
     background-size: cover;  
     margin-top: 0;  
 
-    z-index: 0;
+    
 }
 
 .parallax-sportpro {     
@@ -339,6 +340,7 @@ p{
     width: 100%;
     height: 2.5rem;
     align-content: center;
+    z-index: 2;
 }
 
 .footer-section{    
@@ -505,10 +507,13 @@ p{
 
 /* ---------------------------------------------------------Media Queries------------------------------------------ */
 
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 1028px){
+    .header{
+        height: auto;
+    }
 
     .parallax-max {    
-        height: 20rem;
+        /* height: 20rem; */
         z-index: -1;        
         /* The image used */
         background-image: url(../images/FABackground.jpg);
@@ -517,11 +522,87 @@ p{
         height: 30rem;
       
         /* Create the parallax scrolling effect */
-        background-attachment: fixed;
+        /* background-attachment: fixed;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;  
-        margin-top: 0;
+        margin-top: 0; */
+    }
+
+    .parallax-sportpro {        
+        display: none;  
+        /* height: fit-content;       
+        position: relative; */
+    }
+
+    .sportpro-intro{
+        position: relative;
+        height: 5rem;
+    }
+
+    .logo-intro, .column_one, .about_logo{
+        display: none;
+    }
+
+
+    .brand-intro{
+        display: block;
+        justify-content: center;
+        align-content: center;        
+        width: auto;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -60%) scale(.15);
+    }
+
+    .about_container{
+        width: auto;        
+        padding: 0 20px;
+    }
+
+    .card-header{
+        text-align: center;
+    }
+
+    .card-header .btn{
+        font-family: "Gotham-bold"; 
+        font-weight: 700;
+        font-size: 3rem;
+        color: #e81d2d;  
+        text-align: center;
+    }
+
+    .card-body{
+        font-family: "Gotham-book";
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+        margin: 2px;  
+        padding-bottom: 1rem;
+    }
+
+@media screen and (max-width: 375px) {
+
+    .header{
+        height: auto;
+    }
+
+    .parallax-max {    
+        /* height: 20rem; */
+        z-index: -1;        
+        /* The image used */
+        background-image: url(../images/FABackground.jpg);
+      
+        /* Set a specific height */
+        height: 30rem;
+      
+        /* Create the parallax scrolling effect */
+        /* background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        margin-top: 0; */
     }
 
     .parallax-sportpro {        
@@ -540,12 +621,12 @@ p{
     }
 
     .brand-intro{
-        position: fixed;
+        display: block;
         justify-content: center;
         align-content: center;        
         width: auto;
         left: 50%;
-        top: 50%;
+        top: 60%;
         transform: translate(-50%, -60%) scale(.10);
     }    
 
