@@ -140,7 +140,7 @@ p{
     background-color: white;
   
     /* Set a specific height */
-    height: 45rem;
+    height: 47rem;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -425,7 +425,7 @@ p{
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    height: 45rem;
+    height: 49rem;
 }
 
 .gym-intro{
@@ -453,6 +453,12 @@ p{
     height: auto;       
 }
 
+.logo-column h4{
+    font-family: "Gotham-bold"; 
+   font-weight: 900;
+    font-size: 35px;
+}
+
 .gym-intro p{
     text-align: left;
 }
@@ -460,35 +466,108 @@ p{
 .gym-introdescription p{
     text-align: left;
 }
-
+/* --------------------------------Court Tiles------------------------ */
 .sportpro-courtarmortiles{
     height: 30rem;
-    background-color: blue;
+    background-color: rgb(208, 208, 208);
 }
 
+.courttile-row-height{
+    height: 30rem;
+}
+
+.fa-square-full{
+    color: #e81d2d;
+    transform: scale(.7);
+    margin-right: 1rem;
+}
+
+.table-header-color, .logo-column{
+    color: #e81d2d;
+    font-family: "Gotham-bold"; 
+    font-weight: 900;
+}
+
+.table th, .table td{
+    border-top: 0;
+    margin: 0;
+    padding: .2rem;
+}
+.table thead th{
+    border-bottom: none;
+}
+
+.info-column, .spec-column{
+    padding-top: 2rem;
+      
+}
+
+.table thead.table-head-color{
+    color: white;
+}
+
+.container-fluid .care-icons{
+    background-color: none ;
+}
+
+.care-icon{
+    width: 80px;
+}
+
+.logo-column{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.table-head-color tr{
+    background-color: #e81d2d;
+}
+
+.catilelogo{
+    align-self: center;
+    width: 20rem;
+}
+
+.threelayersample{
+    padding-top: 5rem;
+    padding-right: 1rem;
+    align-self: center;
+    width: 25rem;
+}
+
+.table .tableprotect th{
+    width: 200px;
+}
+
+.table .levelprotection{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+}
+/* -------------------------------Court Armor Rolls--------------------------------------- */
 .sportpro-courtarmorrolls{
     height: 30rem;
-    background-color: green;
+    background-color: white;
 }
-
+/* -------------------------------Court Armor Vinyl--------------------------------------- */
 .sportpro-courtarmorvinyl{
     height: 30rem;
-    background-color: red;
+    background-color:rgb(208, 208, 208);
 }
-
+/* -------------------------------Side Armor--------------------------------------- */
 .sportpro-sidearmor{
     height: 30rem;
-    background-color: purple;
+    background-color: white;
 }
-
+/* -------------------------------Tunnel Armor--------------------------------------- */
 .sportpro-tunnelarmor{
     height: 30rem;
-    background-color: orange;
+    background-color: rgb(208, 208, 208);
 }
-
+/* -------------------------------Track Armor--------------------------------------- */
 .sportpro-trackarmor{
     height: 30rem;
-    background-color: teal;
+    background-color:white;
 }
 
 /* -------------------------------------------------------SportPro Images----------------------------------------------- */
@@ -507,7 +586,9 @@ p{
 
 /* ---------------------------------------------------------Media Queries------------------------------------------ */
 
-@media screen and (max-width: 1028px){
+@media screen and (max-width: 768px){
+    
+
     .header{
         height: auto;
     }
@@ -533,6 +614,11 @@ p{
         display: none;  
         /* height: fit-content;       
         position: relative; */
+    }
+
+    .sportpro, .sportpro-courtarmorrolls, .sportpro-courtarmorvinyl, .sportpro-sidearmor, .sportpro-tunnelarmor,
+    .sportpro-trackarmor{
+        display: none;
     }
 
     .sportpro-intro{
@@ -581,6 +667,7 @@ p{
         margin: 2px;  
         padding-bottom: 1rem;
     }
+}
 
 @media screen and (max-width: 375px) {
 
@@ -609,6 +696,11 @@ p{
         display: none;  
         /* height: fit-content;       
         position: relative; */
+    }
+
+    .sportpro, .sportpro-courtarmorrolls, .sportpro-courtarmorvinyl, .sportpro-sidearmor, .sportpro-tunnelarmor,
+    .sportpro-trackarmor{
+        display: none;
     }
 
     .sportpro-intro{
@@ -659,7 +751,7 @@ p{
 
 }
 
-@media screen and (min-width: 1028px){
+@media screen and (min-width: 769px){
     #accordion{
         display: none;
     }
