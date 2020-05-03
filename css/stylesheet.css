@@ -2,14 +2,14 @@
 
 @font-face{
     font-family: Gotham-book;
-    src: url(./fonts/Gotham-Book.otf);
+    src: url(../fonts/Gotham-Book.otf);
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face{
     font-family: Gotham-bold;
-    src: url(./fonts/Gotham-Bold.otf);
+    src: url(../fonts/Gotham-Bold.otf);
     font-style: normal;
     font-weight: 900;
 }
