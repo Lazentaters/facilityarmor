@@ -468,6 +468,7 @@ p{
 }
 /* --------------------------------Court Tiles------------------------ */
 .sportpro-courtarmortiles{
+    box-sizing: border-box;
     height: 30rem;
     background-color: rgb(208, 208, 208);
 }
@@ -488,6 +489,11 @@ p{
     font-weight: 900;
 }
 
+.table {
+    table-layout: fixed;
+    height: auto;
+}
+
 .table th, .table td{
     border-top: 0;
     margin: 0;
@@ -498,7 +504,8 @@ p{
 }
 
 .info-column, .spec-column{
-    padding-top: 2rem;
+    padding-top: 1rem;
+    height: 30rem;
       
 }
 
@@ -515,6 +522,7 @@ p{
 }
 
 .logo-column{
+    box-sizing: border-box;
     padding-top: 2rem;
     text-align: center;
 }
@@ -525,14 +533,14 @@ p{
 
 .catilelogo{
     align-self: center;
-    width: 20rem;
+    width: 100%;
 }
 
-.threelayersample{
+.threelayersample{     
     padding-top: 5rem;
     padding-right: 1rem;
     align-self: center;
-    width: 25rem;
+    width: 100%;
 }
 
 .table .tableprotect th{
