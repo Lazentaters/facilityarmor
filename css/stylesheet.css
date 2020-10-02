@@ -764,3 +764,26 @@ p{
         display: none;
     }
 }
+
+/*------------------------------------  3D Models -------------------------*/
+
+    .ARmodels{
+        font-family: "Gotham-book";
+        margin: 10%;
+        margin-left: 10%;
+        margin-right: 10%;              
+        text-align: left;
+        justify-content: center;
+        
+    }
+
+    .modeltitle{
+        font-family: "Gotham-bold";
+        font-size: .8rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .modelparagraph{
+        
+    }
