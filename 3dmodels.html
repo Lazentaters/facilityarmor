@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS Stylesheet -->
+
+    <link rel="stylesheet" href="css/stylesheet.css">
     
     
     <title>Model Viewer</title>
@@ -13,25 +20,31 @@
         model-viewer{
             height: 300px;
             width: 300px;
-            margin: 0;
+            margin: 0 auto;
         }
 
     </style>
 </head>
+
+
 <body>
-    <p>Facility Armor - Court Armor Rack Animation</p>
+    <div class="ARmodels">
+        <p> Armor - Court Armor Rack Animation</p>
     
     
 
-<!-- Use it like any other HTML element -->
-<!-- <model-viewer src="3D models/FA Rack Eevee 2.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer> -->
-<!--<model-viewer camera-controls skybox-image="3D models/autoshop_01_4k.hdr" alt="A 3D model of a damaged helmet" src="3D models/FA Rack Eevee 2.glb"></model-viewer> -->
-<model-viewer camera-controls autoplay animation-name="RackAnime" ar shadow-intensity="0" src="3D models/FA Rack Eevee Anime.glb" alt="CA Rack Animation"></model-viewer>
+            <!-- Use it like any other HTML element -->
+            <!-- <model-viewer src="3D models/FA Rack Eevee 2.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer> -->
+            <!--<model-viewer camera-controls skybox-image="3D models/autoshop_01_4k.hdr" alt="A 3D model of a damaged helmet" src="3D models/FA Rack Eevee 2.glb"></model-viewer> -->
+            <!--<model-viewer camera-controls autoplay animation-name="RackAnime" ar shadow-intensity="0" src="3D models/FA Rack Eevee Anime.glb" alt="CA Rack Animation"></model-viewer> -->
+            <model-viewer src="3D models/FA Rack Eevee Anime.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="CA Rack Animation" autoplay animation-name="RackAnime" ios-src="3D models/FA Rack Eevee Animation3.usdz"></model-viewer>
 
-<br>
+    <br>
+
+        <p>If viewing from a mobile device, tap the icon in the bottom right of the image to view the 3D model in AR</p>
 
 <!-- <model-viewer src="3D models/FA Rack Eevee Anime.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="CA Rack Animation" autoplay animation-name="RackAnime" ios-src="3D models/FA Rack Eevee Animation3.usdz"></model-viewer> -->
-
+   </div>
 
 </body>
 </html>
