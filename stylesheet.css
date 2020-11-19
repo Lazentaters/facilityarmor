@@ -791,10 +791,10 @@ p{
 
     /*--------Compare Slider Videos------------------*/
 
-    body {
+    /*body {
         background: #333;
         margin: 2rem;
-      }
+      }*/
       #video-compare-container {
         display: inline-block;
         line-height: 0;
