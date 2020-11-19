@@ -86,15 +86,15 @@ p{
 }
 
 /* ----------------------------------------------Header---------------------------------------- */
-.header{      
-    /* Height: auto; 
+/*.header{      
+     Height: auto; 
     background-image: url(../images/FABackground.jpg);
     background-color: gray;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;  */
+    background-position: center;  
      
-}
+}*/
 
 .header-logo{
     width: 65%;
@@ -787,15 +787,13 @@ p{
         background-color: #e81d2d;
     }
 
-    .modelparagraph{
-        
-    }
+    
 
     /*--------Compare Slider Videos------------------*/
 
     body {
-        background: #333;
-        margin: 2rem;
+        background: white;
+        margin: 0;
       }
       #video-compare-container {
         display: inline-block;
@@ -816,7 +814,7 @@ p{
       }
       #video-clipper video {
         width: 200%;
-        postion: absolute;
+        position: absolute;
         height: 100%;
       }
       
